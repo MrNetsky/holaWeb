@@ -9,6 +9,7 @@ nacimiento = "11/05/1997"
 print('Hola, mi nombre es', nombre, 'nací el', nacimiento, 'y soy', profesion)
 
 #.format: Es un método para insertar variables en posiciones específicas dentro de una cadena de texto.
+#En caso de que no se especifique posción alguna, se imprimirán en el orden en el que se ingresaron dentro del .format
 print('Hola, mi nombre es {}, nací el {} y soy {}'.format(nombre, nacimiento, profesion))
 
 #F-strings: Usas una f antes de las comillas para insertar variables directamente dentro de la cadena de texto. es a menudo preferido por ser más 
