@@ -12,3 +12,10 @@ tupla = (1, 2, 3, 2)
 print(tupla.count(2))  # Resultado: 2
 #Devuelve el índice de la primera aparición de un valor.
 print(tupla.index(2))  # Resultado: 1
+
+#Son inmutables, pero como uno de los elementos de esta tupla es una lista, dicha lista SI es mutable y por ello es factible lo 
+#siguiente:
+my_list = ['Marull']
+my_tuple = (11, 5, 1997, 1.72, 'Pablo Leandro', 'Acosta Cuestas', my_list)
+my_list [0] = 'José de la Quintana'
+print(my_tuple)

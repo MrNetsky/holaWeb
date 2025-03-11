@@ -3,7 +3,7 @@
 a ={
     'nombre' : 'Pablo Leandro',
     'apellido' : 'Acosta Cuestas',
-    'año' : 1997
+    'año' : 199
 }
 
 print(a.keys()) #Devuelve las claves, tambien sirve para iterar.
@@ -12,7 +12,10 @@ print(a.get('año')) #Devuelve el valor de una clave
 #devolverá un 'none', indicando que NO encontró el valor buscado (Pero el programa continuará).
 print(a.values())
 print(a.items()) #Devuelve un objeto con pares clave-valor como tuplas.
-a.pop('año') #Elimina un elemento.
+a.update({'año': 1997, 'día' : 11})
+
+del a ['año'] #Elimina un elemento.
+a.pop('año') #En el segundo caso, podrías usar el valor después.
 print(a)
 a.clear() #Elimina TODOS los elementos.
 print(a)
